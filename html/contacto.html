@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+    <header>
+        <nav>
+            <img src="smp.png" alt="smpparrilleros">
+            <img src="busqueda.webp" alt="busqueda">
+    <ul class="formulario">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="tienda.html">TIENDA</a></li>
+        <li><a href="cursosdeparrilla.html">CURSOS DE PARRILLA</a></li>
+        <li><a href="tips.html">TIPS</a></li>
+ 
+    <FORM method=GET action="index.html">
+    <fieldset>
+        <input type=hidden name=ie value=UTF-8 />
+        <input type=hidden name=oe value=UTF-8 />
+                        
+        <input type=text id="s" name="q" value="" size="50" />
+    
+ <input type=submit  id="x" name=btnG VALUE="Buscar" />
+    </fieldset>
+</from>
+</ul></nav></header>
+   
+<h1>CONTACTO</h1>
+  
+<form action="">
+<fieldset>   
+<legend>Datos Personales</legend>
+<label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+    <label for="apeido">Apeido</label>
+    <input type="text" name="apeido" id="apeido" placeholder="Ingresa tu apeido" required>
+    <label for="clave">Contraseña</label>
+    <input type="password" name="clave" id="clave" placeholder="Ingresa tu clave" required>
+    <label for="correo">Correo Electrónico</label>
+    <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo" required>
+    
+<label for="country">Estado</label>
+<select name="country" id="country">
+<option value="mexico">México</option>
+<option value="argentina">Argentina</option>
+<option value="colombia">Colombia</option>
+<option value="texas">Texas</option>
+</select>
+<label for="">Tipo de Parrillero</labels>
+<input type="radio" name="parrillero"> Choice
+<input type="radio" name="parrillero"> Prime
+
+    <label for="comentario">Comentario</label>
+    <textarea name="comentario" id="comentario" cols="30" rows="3" minlength="30"></textarea>
+<input type="submit" value="Enviar">
+<input type="submit" value="Limpiar">       
+</fieldset> 
+</body></html>
