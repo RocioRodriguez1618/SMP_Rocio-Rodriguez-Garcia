@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    position: center;
+
+}
+
+/* ------------------header-------------- */
+
+.header {
+    background-position: center;
+    background-color: black;
+    position: center;
+    height: 120px;
+    width: 100%;
+    padding: 1rem 1rem 1rem 0rem;
+    margin: 0 0 20px 0rem;
+
+}
+
+.navbar_nav {
+    background-color: black;
+    color: aliceblue;
+}
+
+.header_imagensmp {
+    width: 66px;
+    height: 66px;
+}
+
+/* .header_buscado {
+    margin: 1rem 1rem 1rem 4rem;
+    background-color: beige;
+    border-radius: .5rem;
+    width: 1049px;
+    height: 32px;
+  }
+  .header_buscado1{
+    display: flex;
+    column-gap: 40px;
+    padding: 20px 0 5px 20px;
+    margin: 2rem 1rem 1rem .1rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: .5rem;
+    width: 1030px;
+    height: 30px;
+    list-style: none;
+    color: azure;
+    
+  } */
+
+/* .header__buscador {
+    width: 47px;
+    height: 47px;
+    padding-left: 1100px;
+    color: aqua;
+    margin-top: -40px;
+  
+  } */
+
+.header___buscador {
+    max-width: 100px;
+    max-height: 100px;
+
+}
+
+.header_textmenu a {
+    color: aliceblue;
+    padding-top: 12rem;
+    padding-left: 1rem;
+}
+
+h3 {
+    text-size-adjust: 4rem;
+    text-align: center;
+    color: #6B0000;
+}
+
+h1 {
+    text-align: center;
+    color: #6B0000;
+}
+
+/* .secctionimagen {
+    width: 1440px;
+    height: 550px;
+    background-color: darkorange;
+  
+  } */
+.secction_imagen {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    padding: 1rem 1rem 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: blueviolet;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+     animation-delay: 0s;
+ }
+
+/* .metodospago {
+    width: 100%;
+    text-align: center;
+    width: 1440px;
+    height: 155px;
+    background-color: brown;
+  } */
+
+.metodos_pago {
+    width: 100%;
+    display: flex;
+    column-gap: 100px;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: aqua;
+}
+    
+
+#myDIV {
+    height: 600px;
+    width: 780px;
+    display: grid;
+    grid-template-columns: 50% 0% 50% 50%;
+    background-color: #2196F3;
+    padding: 0px 0px 10px 40px;
+}
+
+#myDIV div {
+    height: 280px;
+    width: 720px;
+    font-size: 22px;
+    text-align: right;
+}
+
+.item1 {
+    grid-area: 1 / 1 / span 2 / span 3;
+    background-color: aquamarine;
+}
+
+.item2 {
+    text-align: right;
+    margin: 0 0 15px 0;
+    background-color: blue;
+}
+
+.item3 {
+    text-align: right;
+    margin: 15px 0 0 0;
+    background-color: blue;
+    width: 620px;
+
+}
+
+@keyframes un_efecto{
+    0%{ width: 100px; }
+    0%{ width: 300px; }
+    0%{ width: 100px;}
+}
+
+.secctionimagenessales {
+    height: 300px;
+    width: 100%;
+    margin: 40px 0px 40px 0px;
+    justify-content: center;
+    background-color: aqua;
+ }
+
+.secction_imagenessales {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
+
+.iframevideo {
+    padding: 0 10% 0 10%;
+    height: 550px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.molcajete_final {
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+    background-color: blue;
+}
+
+.newpaper {
+    display: flex;
+    column-gap: 60px;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(to top, #633, #000, #000)
+}
+/* aca no me dejaba quitar los puntos de listado con list.style:none por lo cual mejor cree uno donde este el ul ya que en mi pagina no tengo listados con puntos que me afecten mas adelante  */
+ul {
+    list-style: none;
+}
+.newpaper_izq {
+    justify-content: left;
+    text-align: left;
+    font-size: 25px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.newpaper_der {
+    justify-content: right;
+    text-align: right;
+    font-size: 25px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    color: aliceblue;
+}
