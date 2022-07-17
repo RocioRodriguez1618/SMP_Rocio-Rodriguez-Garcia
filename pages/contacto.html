@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/estilos.css">
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/backup.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <title>Contacto</title>
 </head>
 <body>
-    <header>
-    <nav class="header">
-        <img class="header_imagensmp" src="../imagenes/smp.png" alt="smpparrilleros"></div>
-        <nav class="header_buscado">
-            <form action="tal">
-                <input type="text" name"" id="" placeholder="Buscar">
-                <input type="submit" value=""> </from>
-            </form>
-
-            <nav href="header_buscador"><img class="header__buscador" src="../imagenes/busqueda.webp" alt="busqueda">
-
-
-                <ul class="header_buscado1">
-                    <li href="../index.html">INICIO</li>
-                    <li href="../pages/cursosdeparrilla.html">CURSOS DE PARRILLA</li>
-                    <li href="../pages/contacto.html">CONTACTO</li>
-                    <li href="../pages/tips.html">TIPS</li>
+    <header class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="header_imagensmp" src="../imagenes/smp.png" alt=" smp parrilleros"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cursosdeparrilla.html">CURSOS DE PARRILLA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/tips.html">TIPS</a>
+                    </li>
                 </ul>
-            </nav>
-        </nav>
-    </nav>
-
-<h1>CONTACTO</h1>
-  
-<form action="">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+  <!-- -------formulario sin boostrap------- -->
+<!-- <form action="">
 <fieldset>   
 <legend>Datos Personales</legend>
 <label for="nombre">Nombre</label>
@@ -59,5 +69,122 @@
     <textarea name="comentario" id="comentario" cols="30" rows="3" minlength="30"></textarea>
 <input type="submit" value="Enviar">
 <input type="submit" value="Limpiar">       
-</fieldset> 
+</fieldset>  -->
+
+<section class="formularioboostrap">
+    <form>
+    <h1>CONTACTO</h1>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@gmal.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Comentario
+      </label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Sugerencia</option>
+        <option>Mejora</option>
+        <option>Queja</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">seleciona le mejor calificación</label>
+      <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Comentarios Adicionales</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </form>
+<form>
+    <div class="form-row align-items-center">
+      <div class="col-auto my-1">
+        <label class="mr-sm-2" for="inlineFormCustomSelect">Parrillero</label>
+        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+          <option selected>Escoge</option>
+          <option value="1">Choice</option>
+          <option value="2">Prime</option>
+          <option value="3">Member</option>
+        </select>
+      </div>
+    
+      <div class="col-auto my-1">
+        <button type="submit" class="btn btn-danger">Enviar</button>
+      </div>
+    </div>
+  </form>
+
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+    <label class="form-check-label" for="exampleRadios1">
+      Suscribirme
+    </label>
+  </div>
+
+</section>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../imagenes/molcajetestematica.jpeg" class="d-block w-100" alt="molcajete tradicional">
+        </div>
+        <div class="carousel-item">
+            <img src="../imagenes/molcajetestematica.jpeg" class="d-block w-100" alt="tradicion mexico">
+        </div>
+    </div>
+</div>
+</section>
+<footer class="newpaper">
+    <div class="newpaper_izq">
+
+        <h3>Más contenido</h3>
+        <ul>
+            <li>Soy Parrillero</li>
+            <li> Maestros Parrilleros</li>
+            <li>Noticias Parrilleras</li>
+            <li>Tips Parrilleros</li>
+            <li> Facturación</li>
+        </ul>
+    </div>
+    <div class="newpaper_izq">
+        <h3>Soy Parrillero</h3>
+        <ul>
+            <li>Maestros Parrilleros</li>
+            <li>Noticias Parrilleras</li>
+            <li>Tips Parrilleros</li>
+            <li>Facturación</li>
+        </ul>
+    </div>
+
+    <div class="newpaper_der">
+
+        <h3>Contactanos</h3>
+        <ul>
+            <li>Soy parrillero</li>
+            <li> Maestros Parrilleros</li>
+            <li>Noticias Parrilleras</li>
+            <li>Tips Parrilleros</li>
+            <li> Facturación</li>
+        </ul>
+    </div>
+
+    <div class="newpaper_der">
+        <h3>Este es mi estilo</h3>
+        <ul>
+            <li>Maestros Parrilleros</li>
+            <li>Noticias Parrilleras</li>
+            <li>Tips Parrilleros</li>
+            <li>Facturación</li>
+        </ul>
+    </div>
+</footer>
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+ crossorigin="anonymous"></script>
 </body></html>

@@ -14,24 +14,31 @@ body {
 /* ------------------header-------------- */
 
 .header {
-    background-position: center;
-    background-color: black;
     position: center;
-    height: 120px;
-    width: 100%;
-    padding: 1rem 1rem 1rem 0rem;
-    margin: 0 0 20px 0rem;
-
 }
 
-.navbar_nav {
+.navbar {
     background-color: black;
-    color: aliceblue;
+
+    
+}
+.container-fluid{
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    
+
+}
+.navbar-dark{
+    background-color: black;
+    height: 150px;
+    width: 100%;
 }
 
 .header_imagensmp {
-    width: 66px;
-    height: 66px;
+    width: 70px;
+    height: 70px;
 }
 
 /* .header_buscado {
@@ -64,20 +71,24 @@ body {
   
   } */
 
-.header___buscador {
+/* .header___buscador {
     max-width: 100px;
     max-height: 100px;
 
-}
+} */
 
-.header_textmenu a {
+/* .header_textmenu a {
     color: aliceblue;
     padding-top: 12rem;
     padding-left: 1rem;
-}
+} */
 
 h3 {
     text-size-adjust: 4rem;
+    text-align: center;
+    color: #6B0000;
+}
+h2 {
     text-align: center;
     color: #6B0000;
 }
@@ -101,12 +112,11 @@ h1 {
     align-items: center;
     justify-content: center;
     list-style: none;
-    background-color: blueviolet;
     animation-name: un_efecto;
     animation-iteration-count: infinite;
     animation-duration: 2s;
-     animation-delay: 0s;
- }
+    animation-delay: 0s;
+}
 
 /* .metodospago {
     width: 100%;
@@ -125,16 +135,14 @@ h1 {
     align-items: center;
     justify-content: center;
     list-style: none;
-    background-color: aqua;
 }
-    
+
 
 #myDIV {
     height: 600px;
     width: 780px;
     display: grid;
     grid-template-columns: 50% 0% 50% 50%;
-    background-color: #2196F3;
     padding: 0px 0px 10px 40px;
 }
 
@@ -147,27 +155,32 @@ h1 {
 
 .item1 {
     grid-area: 1 / 1 / span 2 / span 3;
-    background-color: aquamarine;
 }
 
 .item2 {
     text-align: right;
     margin: 0 0 15px 0;
-    background-color: blue;
 }
 
 .item3 {
     text-align: right;
     margin: 15px 0 0 0;
-    background-color: blue;
     width: 620px;
 
 }
 
-@keyframes un_efecto{
-    0%{ width: 100px; }
-    0%{ width: 300px; }
-    0%{ width: 100px;}
+@keyframes un_efecto {
+    0% {
+        width: 100px;
+    }
+
+    0% {
+        width: 300px;
+    }
+
+    0% {
+        width: 100px;
+    }
 }
 
 .secctionimagenessales {
@@ -175,8 +188,7 @@ h1 {
     width: 100%;
     margin: 40px 0px 40px 0px;
     justify-content: center;
-    background-color: aqua;
- }
+}
 
 .secction_imagenessales {
     display: flex;
@@ -192,12 +204,11 @@ h1 {
     justify-content: center;
 
 }
-
-.molcajete_final {
-    height: 600px;
-    width: 100%;
-    justify-content: center;
-    background-color: blue;
+.formularioboostrap{
+    justify-content: center ;
+    font-size: 1rem;
+    margin:20px 240px 20px 240px;
+    font-family: fantasy;
 }
 
 .newpaper {
@@ -208,10 +219,21 @@ h1 {
     padding: 30px;
     background: linear-gradient(to top, #633, #000, #000)
 }
+
+.img-fluid{
+    width: 100%;
+}
+.centrarp{
+    text-align: center;
+    justify-content:center;
+    font-size: 2rem;
+    margin: 40px 0 40px 0;
+}
 /* aca no me dejaba quitar los puntos de listado con list.style:none por lo cual mejor cree uno donde este el ul ya que en mi pagina no tengo listados con puntos que me afecten mas adelante  */
 ul {
     list-style: none;
 }
+
 .newpaper_izq {
     justify-content: left;
     text-align: left;
